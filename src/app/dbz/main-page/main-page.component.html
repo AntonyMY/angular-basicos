@@ -12,7 +12,7 @@
     </div>
 
     <div class="col">
-        <app-agregar [nuevo]="defecto" [agregar]="personajes"></app-agregar>
+        <app-agregar [nuevo]="defecto" (onNuevoPersonaje)="agregarNuevoPersonaje( $event )"></app-agregar>
         <!-- <h3>Agrregar<small>{{ nuevo.nombre }}</small></h3>
         <hr>
         <form (ngSubmit)="agregar()"> -->

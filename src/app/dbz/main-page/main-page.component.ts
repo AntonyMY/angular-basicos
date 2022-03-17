@@ -20,8 +20,13 @@ export class MainPageComponent  {
   ];
 
   @Input() defecto : Personaje = {
-    nombre : 'a',
-    poder  : 1
+    nombre : 'Pikoro',
+    poder  : 4000
+  }
+
+  agregarNuevoPersonaje( argumento: Personaje){
+    //debugger;
+    this.personajes.push(argumento);
   }
 
   // nuevo : Personaje = {
