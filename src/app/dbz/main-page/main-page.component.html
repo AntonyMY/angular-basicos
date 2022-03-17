@@ -12,17 +12,18 @@
     </div>
 
     <div class="col">
-        <h3>Agrregar<small>{{ nuevo.nombre }}</small></h3>
+        <app-agregar [nuevo]="defecto" [agregar]="personajes"></app-agregar>
+        <!-- <h3>Agrregar<small>{{ nuevo.nombre }}</small></h3>
         <hr>
-        <form (ngSubmit)="agregar()">
+        <form (ngSubmit)="agregar()"> -->
             <!-- Escucha como emitir el evento, corchetes + parentecis [(ngModel)] es el concepto de [two-way data binding] emite como recibe eventos-->
-            <input type="text"   placeholder="Nombre" [(ngModel)]="nuevo.nombre" name="nombre" />
+            <!-- <input type="text"   placeholder="Nombre" [(ngModel)]="nuevo.nombre" name="nombre" /> -->
             <!-- [value]="nuevo.nombre" -->
-            <input type="number" placeholder="Poder"  [(ngModel)]="nuevo.poder" name="poder" />
+            <!-- <input type="number" placeholder="Poder"  [(ngModel)]="nuevo.poder" name="poder" /> -->
 
-            <button type="submit">
+            <!-- <button type="submit">
                 Agregar
             </button>
-        </form>
+        </form> -->
     </div>
 </div>

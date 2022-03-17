@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interface';
 
 
@@ -19,23 +19,28 @@ export class MainPageComponent  {
     }
   ];
 
-  nuevo : Personaje = {
-    nombre : '',
-    poder  : 0
+  @Input() defecto : Personaje = {
+    nombre : 'a',
+    poder  : 1
   }
 
-  agregar(){
+  // nuevo : Personaje = {
+  //   nombre : '',
+  //   poder  : 0
+  // }
 
-    if( this.nuevo.nombre.trim().length === 0){ return; }
+  // agregar(){
 
-    this.personajes.push(this.nuevo);
+  //   if( this.nuevo.nombre.trim().length === 0){ return; }
 
-    this.nuevo = {
-      nombre: '',
-      poder : 0
-    }
+  //   this.personajes.push(this.nuevo);
 
-    console.log(this.nuevo);
-  }
+  //   this.nuevo = {
+  //     nombre: '',
+  //     poder : 0
+  //   }
+
+  //   console.log(this.nuevo);
+  // }
 
 }
