@@ -7,7 +7,7 @@ import { DbzService } from '../services/dbz.service';
   selector: 'app-main-page',
   templateUrl: './main-page.component.html'
 })
-export class MainPageComponent  {
+export class MainPageComponent  { 
 
   defecto : Personaje = {
     nombre : 'Pikoro',
